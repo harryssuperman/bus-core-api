@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>bus-core-api</groupId>
+  <artifactId>bus-core-api</artifactId>
+  <version>1.0.1</version>
+  <packaging>jar</packaging>
+
+  <name>bus-core-api</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <scm>
+      <url>http://www.git.com</url>
+      <connection>scm:git:https://github.com/harryssuperman/bus-core-api.git</connection>
+   </scm>
+   <distributionManagement>
+      <repository>
+         <id>maven-releases</id>
+         <name>maven-release in nexus</name>
+         <url>http://localhost:8081/repository/maven-releases/</url>
+      </repository>
+   </distributionManagement>
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.5.3</version>
+            <configuration>
+               <useReleaseProfile>false</useReleaseProfile>
+               <goals>deploy</goals>
+               <scmCommentPrefix>[bus-core-api-release-checkin]</scmCommentPrefix>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+</project>
+
