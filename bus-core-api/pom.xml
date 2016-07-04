@@ -3,7 +3,7 @@
 
   <groupId>bus-core-api</groupId>
   <artifactId>bus-core-api</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>bus-core-api</name>
@@ -24,7 +24,7 @@
   <scm>
       <url>http://www.git.com</url>
       <connection>scm:git:https://github.com/harryssuperman/bus-core-api.git</connection>
-     <tag>bus-core-api-1.0.4</tag>
+     <tag>HEAD</tag>
   </scm>
 
 
