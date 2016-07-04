@@ -26,14 +26,20 @@
       <connection>scm:git:https://github.com/harryssuperman/bus-core-api.git</connection>
      <tag>HEAD</tag>
   </scm>
+
+
+
+
    <distributionManagement>
       <repository>
-         <id>maven-releases</id>
-         <name>maven-release in nexus</name>
+         <id>local-nexus</id>
+         <name>local nexus release</name>
          <url>http://localhost:8081/repository/maven-releases/</url>
       </repository>
    </distributionManagement>
-   <build>
+
+
+<build>
       <plugins>
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
