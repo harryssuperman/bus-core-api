@@ -36,6 +36,13 @@
          <name>local nexus release</name>
          <url>http://localhost:8081/repository/maven-releases/</url>
       </repository>
+
+	<!-- Publish the versioned releases here -->  
+ <snapshotRepository>  
+  <id>local-nexus</id>  
+  <name>local nexus snapshots</name>  
+  <url>http://localhost:8081repository/maven-snapshots/</url>  
+ </snapshotRepository>  
    </distributionManagement>
 
 
